@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\bin\Debug\Resturent.me.exe.config
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\bin\Debug\Resturent.me.exe
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\bin\Debug\Resturent.me.pdb
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.Form1.resources
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.Properties.Resources.resources
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.csproj.GenerateResource.cache
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.exe
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.pdb
+C:\Users\user\source\repos\C#\ConsoleApp1\Resturent.me\obj\Debug\Resturent.me.Form2.resources
