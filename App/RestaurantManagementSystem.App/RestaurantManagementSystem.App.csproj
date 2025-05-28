@@ -145,6 +145,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -191,6 +194,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\employee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-full-screen-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-full-screen-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

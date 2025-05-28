@@ -51,9 +51,10 @@
             this.usernameTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameTxtbox.ForeColor = System.Drawing.Color.White;
-            this.usernameTxtbox.Location = new System.Drawing.Point(582, 306);
+            this.usernameTxtbox.Location = new System.Drawing.Point(436, 249);
+            this.usernameTxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usernameTxtbox.Name = "usernameTxtbox";
-            this.usernameTxtbox.Size = new System.Drawing.Size(434, 24);
+            this.usernameTxtbox.Size = new System.Drawing.Size(326, 24);
             this.usernameTxtbox.TabIndex = 1;
             this.usernameTxtbox.TextChanged += new System.EventHandler(this.usernameTxtbox_TextChanged);
             // 
@@ -61,8 +62,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
@@ -71,7 +73,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(214)))), ((int)(((byte)(44)))));
-            this.label2.Location = new System.Drawing.Point(584, 278);
+            this.label2.Location = new System.Drawing.Point(438, 226);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 3;
@@ -82,7 +85,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(214)))), ((int)(((byte)(44)))));
-            this.label3.Location = new System.Drawing.Point(584, 362);
+            this.label3.Location = new System.Drawing.Point(438, 294);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 5;
@@ -95,18 +99,20 @@
             this.passwordTxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwordTxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxtbox.ForeColor = System.Drawing.Color.White;
-            this.passwordTxtbox.Location = new System.Drawing.Point(582, 393);
+            this.passwordTxtbox.Location = new System.Drawing.Point(436, 319);
+            this.passwordTxtbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordTxtbox.Name = "passwordTxtbox";
-            this.passwordTxtbox.Size = new System.Drawing.Size(434, 24);
+            this.passwordTxtbox.Size = new System.Drawing.Size(326, 24);
             this.passwordTxtbox.TabIndex = 4;
             this.passwordTxtbox.UseSystemPasswordChar = true;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RestaurantManagementSystem.App.Properties.Resources.RMSlogo;
-            this.pictureBox2.Location = new System.Drawing.Point(664, 61);
+            this.pictureBox2.Location = new System.Drawing.Point(498, 50);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(258, 165);
+            this.pictureBox2.Size = new System.Drawing.Size(194, 134);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -116,8 +122,9 @@
             // 
             this.pictureBox1.Image = global::RestaurantManagementSystem.App.Properties.Resources.Rpic;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 700);
+            this.pictureBox1.Size = new System.Drawing.Size(375, 569);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -127,9 +134,10 @@
             this.showpassCheckbox.AutoSize = true;
             this.showpassCheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.showpassCheckbox.ForeColor = System.Drawing.Color.White;
-            this.showpassCheckbox.Location = new System.Drawing.Point(587, 436);
+            this.showpassCheckbox.Location = new System.Drawing.Point(440, 354);
+            this.showpassCheckbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showpassCheckbox.Name = "showpassCheckbox";
-            this.showpassCheckbox.Size = new System.Drawing.Size(121, 20);
+            this.showpassCheckbox.Size = new System.Drawing.Size(101, 17);
             this.showpassCheckbox.TabIndex = 7;
             this.showpassCheckbox.Text = "Show password";
             this.showpassCheckbox.UseVisualStyleBackColor = true;
@@ -143,12 +151,14 @@
             this.loginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(582, 495);
+            this.loginBtn.Location = new System.Drawing.Point(436, 402);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(434, 43);
+            this.loginBtn.Size = new System.Drawing.Size(326, 35);
             this.loginBtn.TabIndex = 8;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // linkLabel1
             // 
@@ -157,9 +167,10 @@
             this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(34, 20);
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.Green;
-            this.linkLabel1.Location = new System.Drawing.Point(615, 557);
+            this.linkLabel1.Location = new System.Drawing.Point(461, 453);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(348, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(295, 17);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Having trouble logging in? Contact support@truvona.com ";
@@ -170,8 +181,9 @@
             // 
             this.panel1.Controls.Add(this.closeBtn);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1102, 41);
+            this.panel1.Size = new System.Drawing.Size(826, 33);
             this.panel1.TabIndex = 10;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -183,9 +195,10 @@
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeBtn.ForeColor = System.Drawing.Color.White;
-            this.closeBtn.Location = new System.Drawing.Point(1060, 3);
+            this.closeBtn.Location = new System.Drawing.Point(795, 2);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(39, 32);
+            this.closeBtn.Size = new System.Drawing.Size(29, 26);
             this.closeBtn.TabIndex = 11;
             this.closeBtn.Text = "X";
             this.closeBtn.UseVisualStyleBackColor = false;
@@ -193,10 +206,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.ClientSize = new System.Drawing.Size(825, 569);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.linkLabel1);
@@ -209,6 +222,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.usernameTxtbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

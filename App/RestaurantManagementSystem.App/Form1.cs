@@ -86,5 +86,11 @@ namespace RestaurantManagementSystem.App
             bool show = showpassCheckbox.Checked;
             passwordTxtbox.UseSystemPasswordChar = !show;
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            WelcomeForm welcomeForm = new WelcomeForm();
+            welcomeForm.ShowDialog();
+        }
     }
 }
