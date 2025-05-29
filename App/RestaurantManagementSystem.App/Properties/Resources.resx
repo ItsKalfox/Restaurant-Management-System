@@ -145,14 +145,35 @@
   <data name="Notification" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Notification.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2025-05-29 at 13.16.52_2d015e78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2025-05-29 at 13.16.52_2d015e78.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\employee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restpic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restpic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2025-05-29 at 13.17.09_15840a61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2025-05-29 at 13.17.09_15840a61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="restoreBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restoreBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-logout-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-logout-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="RMSlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\RMSlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoutLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoutLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-logout-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-logout-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-full-screen-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-full-screen-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +187,37 @@
   <data name="Notification1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Notification1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restpic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Restpic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notiIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notiIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="default_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChopSuey_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChopSuey-Rice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Egg_Noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Egg-Noodles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mix_ChopSuey_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mix-ChopSuey-Rice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sausage_Devilled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sausage-Devilled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sausage_Fried_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sausage-Fried-Rice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spicy_Mix_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spicy-Mix-Rice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2b50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2b50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

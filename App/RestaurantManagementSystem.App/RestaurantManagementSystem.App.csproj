@@ -79,6 +79,12 @@
     <Compile Include="EmployeeManagement.Designer.cs">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="FoodCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodCard.Designer.cs">
+      <DependentUpon>FoodCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,8 +153,14 @@
     <Compile Include="WProgress.Designer.cs">
       <DependentUpon>WProgress.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FoodCard.resx">
+      <DependentUpon>FoodCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -227,6 +239,41 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="Images\ChopSuey-Rice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Egg-Noodles.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Mix-ChopSuey-Rice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sausage-Devilled.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Sausage-Fried-Rice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Spicy-Mix-Rice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\2b50.png" />
+    <None Include="Resources\search_logo.png" />
+    <None Include="Resources\Spicy-Mix-Rice.png" />
+    <None Include="Resources\Sausage-Devilled.png" />
+    <None Include="Resources\Sausage-Fried-Rice.png" />
+    <None Include="Resources\Mix-ChopSuey-Rice.png" />
+    <None Include="Resources\Egg-Noodles.png" />
+    <None Include="Resources\ChopSuey-Rice.png" />
+    <None Include="Resources\default_food.png" />
+    <None Include="Resources\notiIcon.png" />
+    <None Include="Resources\logout-button.png" />
+    <None Include="Resources\logoutLogo.png" />
+    <None Include="Resources\logout-logo.png" />
+    <None Include="Resources\icons8-logout-481.png" />
+    <None Include="Resources\icons8-logout-48.png" />
+    <None Include="Resources\WhatsApp Image 2025-05-29 at 13.16.52_2d015e78.jpg" />
+    <None Include="Resources\WhatsApp Image 2025-05-29 at 13.17.09_15840a61.jpg" />
     <None Include="Resources\Restpic.png" />
     <None Include="Resources\restoreBtn.png" />
     <None Include="Resources\minimizeBtn.png" />
@@ -245,5 +292,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

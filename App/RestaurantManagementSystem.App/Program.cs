@@ -16,8 +16,12 @@ namespace RestaurantManagementSystem.App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            string fullName = "Alex Waiter";
+            string roleName = "Waiter";
+            int roleId = 1; // Replace with actual RoleID for waiter from your DB
+            Application.Run(new WelcomeForm(fullName, roleName, roleId));
+            //Application.Run(new Form1());
         }
     }
 }
-

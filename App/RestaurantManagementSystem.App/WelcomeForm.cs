@@ -14,6 +14,7 @@ namespace RestaurantManagementSystem.App
 {
     public partial class WelcomeForm : Form
     {
+        private Form activeDynamicForm = null;
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HTCAPTION = 0x2;
 
@@ -26,12 +27,12 @@ namespace RestaurantManagementSystem.App
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
-           int nLeftRect,     // x-coordinate of upper-left corner
-           int nTopRect,      // y-coordinate of upper-left corner
-           int nRightRect,    // x-coordinate of lower-right corner
-           int nBottomRect,   // y-coordinate of lower-right corner
-           int nWidthEllipse, // height of ellipse
-           int nHeightEllipse // width of ellipse
+           int nLeftRect,
+           int nTopRect,
+           int nRightRect,
+           int nBottomRect,
+           int nWidthEllipse,
+           int nHeightEllipse
        );
 
         public WelcomeForm()
@@ -40,30 +41,46 @@ namespace RestaurantManagementSystem.App
             SetupUI();
         }
 
-        public WelcomeForm(string fullName, string roleName, int roleId) : this()  // calls parameterless constructor first
+        public WelcomeForm(string fullName, string roleName, int roleId) : this()
         {
             usernameLable.Text = $"{fullName}";
             roleLable.Text = $"{roleName}";
             LoadButtonsForRole(roleId);
         }
 
+        private void SetupUI()
+        {
+            navBtn1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn1.Height, 20, 20));
+            navBtn2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn2.Width, navBtn2.Height, 20, 20));
+            navBtn3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn3.Width, navBtn3.Height, 20, 20));
+            navBtn4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn4.Width, navBtn4.Height, 20, 20));
+            lgBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, lgBtn.Width, lgBtn.Height, 20, 20));
+
+            Panel line = new Panel();
+            line.Height = 2;
+            line.Top = 94;
+            line.Left = 225;
+            line.Width = this.ClientSize.Width - 250 - 10;
+            line.BackColor = Color.FromArgb(0, 192, 0);
+            line.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            this.Controls.Add(line);
+
+        }
+
         private void LoadButtonsForRole(int roleId)
         {
-            // List of your nav buttons
             List<Button> navButtons = new List<Button>
             {
                 navBtn1, navBtn2, navBtn3, navBtn4, navBtn5, navBtn6, navBtn7
             };
 
-            // Hide all buttons initially
             foreach (var btn in navButtons)
             {
                 btn.Visible = false;
                 btn.Text = "";
-                //btn.Click -= NavButton_Click; // Remove old event handlers
             }
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\netys\OneDrive - NSBM\Y1 S3\C# project\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\OneDrive - NSBM\DevProjects\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
@@ -84,36 +101,58 @@ namespace RestaurantManagementSystem.App
                             btn.Text = buttonName;
                             btn.Visible = true;
 
-                            // Create a local copy of the variable for closure
                             string formNameToShow = linkedForm;
                             btn.Click += (s, e) =>
                             {
-                                MessageBox.Show($"Would open form: {formNameToShow}", "Linked Form", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                try
+                                {
+                                    Type formType = Type.GetType("RestaurantManagementSystem.App." + formNameToShow);
+                                    if (formType != null && typeof(Form).IsAssignableFrom(formType))
+                                    {
+                                        if (activeDynamicForm != null && !activeDynamicForm.IsDisposed)
+                                        {
+                                            activeDynamicForm.Close();
+                                        }
+
+                                        Form formInstance = (Form)Activator.CreateInstance(formType);
+                                        activeDynamicForm = formInstance;
+
+                                        formInstance.StartPosition = FormStartPosition.Manual;
+                                        formInstance.Location = new Point(this.Location.X + 200, this.Location.Y + 100);
+
+                                        formInstance.Owner = this;
+
+                                        formInstance.Show();
+
+                                        this.LocationChanged += (sender2, e2) =>
+                                        {
+                                            if (activeDynamicForm != null && !activeDynamicForm.IsDisposed)
+                                            {
+                                                activeDynamicForm.Location = new Point(this.Location.X + 200, this.Location.Y + 100);
+                                            }
+                                        };
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show($"Form '{formNameToShow}' not found or not a Form type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show($"Error loading form '{formNameToShow}': {ex.Message}", "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
                             };
+
+
                         }
                     }
                 }
             }
-        }
-
-
-        private void SetupUI()
-        {
-            navBtn1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn1.Height, 20, 20));
-            navBtn2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn2.Height, 20, 20));
-            navBtn3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn3.Height, 20, 20));
-            navBtn4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn4.Height, 20, 20));
-
-            Panel line = new Panel();
-            line.Height = 2;
-            line.Top = 100;
-            line.Left = 250;
-            line.Width = this.ClientSize.Width - 250 - 20;
-            line.BackColor = Color.FromArgb(0, 192, 0);
-            line.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            this.Controls.Add(line);
 
         }
+
+
+
 
         private void WelcomeForm_Load(object sender, EventArgs e)
         {
@@ -132,7 +171,6 @@ namespace RestaurantManagementSystem.App
             panel2.Width = third;
             panel3.Width = third;
             panel4.Width = third;
-            // panel3 will fill the rest
         }
 
         private void fullsrcbtn_Click(object sender, EventArgs e)
@@ -207,6 +245,21 @@ namespace RestaurantManagementSystem.App
                 ReleaseCapture();
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
         }
     }
 }

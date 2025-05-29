@@ -117,7 +117,7 @@ namespace RestaurantManagementSystem.App
                 string inputUsername = usernameTxtbox.Text;
                 string inputPassword = passwordTxtbox.Text;
 
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\netys\OneDrive - NSBM\Y1 S3\C# project\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\OneDrive - NSBM\DevProjects\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
