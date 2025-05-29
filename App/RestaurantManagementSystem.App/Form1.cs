@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace RestaurantManagementSystem.App
 {
@@ -89,8 +90,90 @@ namespace RestaurantManagementSystem.App
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            WelcomeForm welcomeForm = new WelcomeForm();
-            welcomeForm.ShowDialog();
+            try
+            {
+                usernameerrorLabel.Visible = false;
+                passworderrorLabel.Visible = false;
+
+                bool hasError = false;
+
+                if (string.IsNullOrWhiteSpace(usernameTxtbox.Text))
+                {
+                    usernameerrorLabel.Text = "* Username is required!";
+                    usernameerrorLabel.Visible = true;
+                    hasError = true;
+                }
+
+                if (string.IsNullOrWhiteSpace(passwordTxtbox.Text))
+                {
+                    passworderrorLabel.Text = "* Password is required!";
+                    passworderrorLabel.Visible = true;
+                    hasError = true;
+                }
+
+                if (hasError)
+                    return;
+
+                string inputUsername = usernameTxtbox.Text;
+                string inputPassword = passwordTxtbox.Text;
+
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\OneDrive - NSBM\DevProjects\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    // First fetch everything in one go
+                    string query = @"SELECT 
+                                        l.PasswordHash, 
+                                        e.FirstName, 
+                                        e.LastName, 
+                                        r.RoleName, 
+                                        r.RoleID
+                                    FROM logins l
+                                    JOIN employees e ON l.EmployeeID = e.EmployeeID
+                                    JOIN roles r ON l.RoleID = r.RoleID
+                                    WHERE l.Username = @username";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@username", inputUsername);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                string storedPasswordHash = reader["PasswordHash"].ToString();
+
+                                if (storedPasswordHash == inputPassword)
+                                {
+                                    string fullName = $"{reader["FirstName"]} {reader["LastName"]}";
+                                    string roleName = reader["RoleName"].ToString();
+                                    int roleId = Convert.ToInt32(reader["RoleID"]);
+
+                                    WelcomeForm welcomeForm = new WelcomeForm(fullName, roleName, roleId);
+                                    welcomeForm.Show();
+                                    this.Hide();
+                                }
+                                else
+                                {
+                                    passworderrorLabel.Text = "* Password is incorrect!";
+                                    passworderrorLabel.Visible = true;
+                                }
+                            }
+                            else
+                            {
+                                usernameerrorLabel.Text = "* Username not found!";
+                                usernameerrorLabel.Visible = true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

@@ -34,30 +34,34 @@
             this.logoutbtn = new System.Windows.Forms.Button();
             this.notificationbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.navBtn4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.minmizebtn = new System.Windows.Forms.Button();
-            this.fullsrcbtn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.navBtn3 = new System.Windows.Forms.Button();
+            this.navBtn2 = new System.Windows.Forms.Button();
+            this.navBtn1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.usernameLable = new System.Windows.Forms.Label();
+            this.roleLable = new System.Windows.Forms.Label();
+            this.navBtn5 = new System.Windows.Forms.Button();
+            this.navBtn6 = new System.Windows.Forms.Button();
+            this.navBtn7 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.restoreBtn = new System.Windows.Forms.Button();
+            this.minimizeBtn = new System.Windows.Forms.Button();
+            this.maximizeBtn = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -147,62 +151,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(98, 0);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(71, 11);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(91, 18);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.Text = "Will Parker";
-            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.Controls.Add(this.textBox2);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.roleLable);
+            this.panel5.Controls.Add(this.usernameLable);
             this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(740, 8);
+            this.panel5.Location = new System.Drawing.Point(740, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(163, 59);
             this.panel5.TabIndex = 13;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(71, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 16);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Waiter";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RestaurantManagementSystem.App.Properties.Resources.employee1;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -214,187 +173,281 @@
             this.panel3.Size = new System.Drawing.Size(976, 73);
             this.panel3.TabIndex = 8;
             // 
-            // button4
+            // navBtn4
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(11, 383);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 46);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Salary ";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(950, -1);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 27);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "X";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.navBtn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn4.FlatAppearance.BorderSize = 0;
+            this.navBtn4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn4.ForeColor = System.Drawing.Color.White;
+            this.navBtn4.Location = new System.Drawing.Point(14, 319);
+            this.navBtn4.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn4.Name = "navBtn4";
+            this.navBtn4.Size = new System.Drawing.Size(177, 46);
+            this.navBtn4.TabIndex = 4;
+            this.navBtn4.Text = "Button";
+            this.navBtn4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn4.UseVisualStyleBackColor = false;
+            this.navBtn4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.minmizebtn);
-            this.panel4.Controls.Add(this.fullsrcbtn);
+            this.panel4.Controls.Add(this.maximizeBtn);
+            this.panel4.Controls.Add(this.restoreBtn);
+            this.panel4.Controls.Add(this.minimizeBtn);
+            this.panel4.Controls.Add(this.closeBtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(208, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(976, 27);
             this.panel4.TabIndex = 7;
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             // 
-            // minmizebtn
+            // navBtn3
             // 
-            this.minmizebtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minmizebtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.minmizebtn.BackColor = System.Drawing.Color.Black;
-            this.minmizebtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.icons8_minimize_50;
-            this.minmizebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.minmizebtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.minmizebtn.FlatAppearance.BorderSize = 0;
-            this.minmizebtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.minmizebtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.minmizebtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.minmizebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minmizebtn.ForeColor = System.Drawing.Color.Transparent;
-            this.minmizebtn.Location = new System.Drawing.Point(885, 3);
-            this.minmizebtn.Name = "minmizebtn";
-            this.minmizebtn.Size = new System.Drawing.Size(23, 18);
-            this.minmizebtn.TabIndex = 4;
-            this.minmizebtn.UseVisualStyleBackColor = false;
-            this.minmizebtn.Click += new System.EventHandler(this.minmizebtn_Click);
+            this.navBtn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn3.FlatAppearance.BorderSize = 0;
+            this.navBtn3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn3.ForeColor = System.Drawing.Color.White;
+            this.navBtn3.Location = new System.Drawing.Point(14, 269);
+            this.navBtn3.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn3.Name = "navBtn3";
+            this.navBtn3.Size = new System.Drawing.Size(177, 46);
+            this.navBtn3.TabIndex = 3;
+            this.navBtn3.Text = "Button";
+            this.navBtn3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn3.UseVisualStyleBackColor = false;
+            this.navBtn3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // fullsrcbtn
+            // navBtn2
             // 
-            this.fullsrcbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.fullsrcbtn.BackColor = System.Drawing.Color.Black;
-            this.fullsrcbtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.icons8_full_screen_48;
-            this.fullsrcbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.fullsrcbtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.fullsrcbtn.FlatAppearance.BorderSize = 0;
-            this.fullsrcbtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.fullsrcbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fullsrcbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.fullsrcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fullsrcbtn.ForeColor = System.Drawing.Color.Transparent;
-            this.fullsrcbtn.Location = new System.Drawing.Point(914, 0);
-            this.fullsrcbtn.Name = "fullsrcbtn";
-            this.fullsrcbtn.Size = new System.Drawing.Size(30, 26);
-            this.fullsrcbtn.TabIndex = 1;
-            this.fullsrcbtn.UseVisualStyleBackColor = false;
-            this.fullsrcbtn.Click += new System.EventHandler(this.fullsrcbtn_Click);
+            this.navBtn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn2.FlatAppearance.BorderSize = 0;
+            this.navBtn2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn2.ForeColor = System.Drawing.Color.White;
+            this.navBtn2.Location = new System.Drawing.Point(14, 219);
+            this.navBtn2.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn2.Name = "navBtn2";
+            this.navBtn2.Size = new System.Drawing.Size(177, 46);
+            this.navBtn2.TabIndex = 2;
+            this.navBtn2.Text = "Button";
+            this.navBtn2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn2.UseVisualStyleBackColor = false;
+            this.navBtn2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // navBtn1
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(11, 333);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 46);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Menu";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(11, 283);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 46);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Progress";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(11, 233);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Table View";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.navBtn1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.navBtn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn1.FlatAppearance.BorderSize = 0;
+            this.navBtn1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn1.ForeColor = System.Drawing.Color.White;
+            this.navBtn1.Location = new System.Drawing.Point(14, 169);
+            this.navBtn1.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn1.Name = "navBtn1";
+            this.navBtn1.Size = new System.Drawing.Size(177, 46);
+            this.navBtn1.TabIndex = 1;
+            this.navBtn1.Text = "Button";
+            this.navBtn1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn1.UseVisualStyleBackColor = false;
+            this.navBtn1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel2.Controls.Add(this.navBtn7);
+            this.panel2.Controls.Add(this.navBtn6);
+            this.panel2.Controls.Add(this.navBtn5);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.navBtn4);
+            this.panel2.Controls.Add(this.navBtn3);
+            this.panel2.Controls.Add(this.navBtn2);
+            this.panel2.Controls.Add(this.navBtn1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 761);
             this.panel2.TabIndex = 6;
+            // 
+            // usernameLable
+            // 
+            this.usernameLable.AutoSize = true;
+            this.usernameLable.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLable.ForeColor = System.Drawing.Color.White;
+            this.usernameLable.Location = new System.Drawing.Point(66, 12);
+            this.usernameLable.Name = "usernameLable";
+            this.usernameLable.Size = new System.Drawing.Size(47, 17);
+            this.usernameLable.TabIndex = 15;
+            this.usernameLable.Text = "Name";
+            // 
+            // roleLable
+            // 
+            this.roleLable.AutoSize = true;
+            this.roleLable.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleLable.ForeColor = System.Drawing.Color.Silver;
+            this.roleLable.Location = new System.Drawing.Point(67, 33);
+            this.roleLable.Name = "roleLable";
+            this.roleLable.Size = new System.Drawing.Size(38, 15);
+            this.roleLable.TabIndex = 16;
+            this.roleLable.Text = "Name";
+            // 
+            // navBtn5
+            // 
+            this.navBtn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn5.FlatAppearance.BorderSize = 0;
+            this.navBtn5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn5.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn5.ForeColor = System.Drawing.Color.White;
+            this.navBtn5.Location = new System.Drawing.Point(14, 369);
+            this.navBtn5.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn5.Name = "navBtn5";
+            this.navBtn5.Size = new System.Drawing.Size(177, 46);
+            this.navBtn5.TabIndex = 12;
+            this.navBtn5.Text = "Button";
+            this.navBtn5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn5.UseVisualStyleBackColor = false;
+            // 
+            // navBtn6
+            // 
+            this.navBtn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn6.FlatAppearance.BorderSize = 0;
+            this.navBtn6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn6.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn6.ForeColor = System.Drawing.Color.White;
+            this.navBtn6.Location = new System.Drawing.Point(14, 419);
+            this.navBtn6.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn6.Name = "navBtn6";
+            this.navBtn6.Size = new System.Drawing.Size(177, 46);
+            this.navBtn6.TabIndex = 13;
+            this.navBtn6.Text = "Button";
+            this.navBtn6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn6.UseVisualStyleBackColor = false;
+            // 
+            // navBtn7
+            // 
+            this.navBtn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn7.FlatAppearance.BorderSize = 0;
+            this.navBtn7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn7.ForeColor = System.Drawing.Color.White;
+            this.navBtn7.Location = new System.Drawing.Point(14, 469);
+            this.navBtn7.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn7.Name = "navBtn7";
+            this.navBtn7.Size = new System.Drawing.Size(177, 46);
+            this.navBtn7.TabIndex = 14;
+            this.navBtn7.Text = "Button";
+            this.navBtn7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn7.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RestaurantManagementSystem.App.Properties.Resources.employee1;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // restoreBtn
+            // 
+            this.restoreBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.restoreBtn.BackColor = System.Drawing.Color.Black;
+            this.restoreBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.restoreBtn;
+            this.restoreBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.restoreBtn.FlatAppearance.BorderSize = 0;
+            this.restoreBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.restoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.restoreBtn.Location = new System.Drawing.Point(872, 3);
+            this.restoreBtn.Name = "restoreBtn";
+            this.restoreBtn.Size = new System.Drawing.Size(21, 21);
+            this.restoreBtn.TabIndex = 12;
+            this.restoreBtn.UseVisualStyleBackColor = false;
+            this.restoreBtn.Click += new System.EventHandler(this.restoreBtn_Click);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeBtn.BackColor = System.Drawing.Color.Black;
+            this.minimizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.minimizeBtn;
+            this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Location = new System.Drawing.Point(915, 6);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(15, 15);
+            this.minimizeBtn.TabIndex = 11;
+            this.minimizeBtn.UseVisualStyleBackColor = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
+            // maximizeBtn
+            // 
+            this.maximizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maximizeBtn.BackColor = System.Drawing.Color.Black;
+            this.maximizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.maximizeBtn;
+            this.maximizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.maximizeBtn.FlatAppearance.BorderSize = 0;
+            this.maximizeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.maximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maximizeBtn.Location = new System.Drawing.Point(872, 3);
+            this.maximizeBtn.Name = "maximizeBtn";
+            this.maximizeBtn.Size = new System.Drawing.Size(21, 21);
+            this.maximizeBtn.TabIndex = 10;
+            this.maximizeBtn.UseVisualStyleBackColor = false;
+            this.maximizeBtn.Click += new System.EventHandler(this.maximizeBtn_Click);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBtn.BackColor = System.Drawing.Color.Black;
+            this.closeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.closeBtn;
+            this.closeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.closeBtn.FlatAppearance.BorderSize = 0;
+            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Location = new System.Drawing.Point(951, 6);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(15, 15);
+            this.closeBtn.TabIndex = 9;
+            this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // pictureBox1
             // 
@@ -407,11 +460,23 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 0);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -422,14 +487,14 @@
             this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,18 +510,22 @@
         private System.Windows.Forms.Button notificationbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button minmizebtn;
-        private System.Windows.Forms.Button fullsrcbtn;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button navBtn4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button navBtn3;
+        private System.Windows.Forms.Button navBtn2;
+        private System.Windows.Forms.Button navBtn1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label usernameLable;
+        private System.Windows.Forms.Label roleLable;
+        private System.Windows.Forms.Button navBtn7;
+        private System.Windows.Forms.Button navBtn6;
+        private System.Windows.Forms.Button navBtn5;
+        private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.Button minimizeBtn;
+        private System.Windows.Forms.Button maximizeBtn;
+        private System.Windows.Forms.Button restoreBtn;
     }
 }
