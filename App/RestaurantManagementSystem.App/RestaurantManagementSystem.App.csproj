@@ -227,6 +227,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Restpic.png" />
     <None Include="Resources\restoreBtn.png" />
     <None Include="Resources\minimizeBtn.png" />
     <None Include="Resources\maximizeBtn.png" />

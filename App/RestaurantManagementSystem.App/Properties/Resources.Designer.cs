@@ -183,6 +183,16 @@ namespace RestaurantManagementSystem.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Restpic {
+            get {
+                object obj = ResourceManager.GetObject("Restpic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RMSlogo {
             get {
                 object obj = ResourceManager.GetObject("RMSlogo", resourceCulture);

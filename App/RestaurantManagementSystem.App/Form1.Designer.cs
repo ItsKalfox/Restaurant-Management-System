@@ -211,7 +211,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::RestaurantManagementSystem.App.Properties.Resources.Rpic;
+            this.pictureBox1.Image = global::RestaurantManagementSystem.App.Properties.Resources.Restpic;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

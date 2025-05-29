@@ -34,34 +34,34 @@
             this.logoutbtn = new System.Windows.Forms.Button();
             this.notificationbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.roleLable = new System.Windows.Forms.Label();
+            this.usernameLable = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.navBtn4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.maximizeBtn = new System.Windows.Forms.Button();
+            this.restoreBtn = new System.Windows.Forms.Button();
+            this.minimizeBtn = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.navBtn3 = new System.Windows.Forms.Button();
             this.navBtn2 = new System.Windows.Forms.Button();
             this.navBtn1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.usernameLable = new System.Windows.Forms.Label();
-            this.roleLable = new System.Windows.Forms.Label();
-            this.navBtn5 = new System.Windows.Forms.Button();
-            this.navBtn6 = new System.Windows.Forms.Button();
             this.navBtn7 = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.restoreBtn = new System.Windows.Forms.Button();
-            this.minimizeBtn = new System.Windows.Forms.Button();
-            this.maximizeBtn = new System.Windows.Forms.Button();
-            this.closeBtn = new System.Windows.Forms.Button();
+            this.navBtn6 = new System.Windows.Forms.Button();
+            this.navBtn5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button6
@@ -151,6 +151,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(98, 0);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -162,6 +173,38 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(163, 59);
             this.panel5.TabIndex = 13;
+            // 
+            // roleLable
+            // 
+            this.roleLable.AutoSize = true;
+            this.roleLable.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleLable.ForeColor = System.Drawing.Color.Silver;
+            this.roleLable.Location = new System.Drawing.Point(67, 33);
+            this.roleLable.Name = "roleLable";
+            this.roleLable.Size = new System.Drawing.Size(38, 15);
+            this.roleLable.TabIndex = 16;
+            this.roleLable.Text = "Name";
+            // 
+            // usernameLable
+            // 
+            this.usernameLable.AutoSize = true;
+            this.usernameLable.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLable.ForeColor = System.Drawing.Color.White;
+            this.usernameLable.Location = new System.Drawing.Point(66, 12);
+            this.usernameLable.Name = "usernameLable";
+            this.usernameLable.Size = new System.Drawing.Size(47, 17);
+            this.usernameLable.TabIndex = 15;
+            this.usernameLable.Text = "Name";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RestaurantManagementSystem.App.Properties.Resources.employee1;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 42);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -208,6 +251,70 @@
             this.panel4.Size = new System.Drawing.Size(976, 27);
             this.panel4.TabIndex = 7;
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
+            // 
+            // maximizeBtn
+            // 
+            this.maximizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maximizeBtn.BackColor = System.Drawing.Color.Black;
+            this.maximizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.maximizeBtn;
+            this.maximizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.maximizeBtn.FlatAppearance.BorderSize = 0;
+            this.maximizeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.maximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maximizeBtn.Location = new System.Drawing.Point(912, 3);
+            this.maximizeBtn.Name = "maximizeBtn";
+            this.maximizeBtn.Size = new System.Drawing.Size(21, 21);
+            this.maximizeBtn.TabIndex = 10;
+            this.maximizeBtn.UseVisualStyleBackColor = false;
+            this.maximizeBtn.Click += new System.EventHandler(this.maximizeBtn_Click);
+            // 
+            // restoreBtn
+            // 
+            this.restoreBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.restoreBtn.BackColor = System.Drawing.Color.Black;
+            this.restoreBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.restoreBtn;
+            this.restoreBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.restoreBtn.FlatAppearance.BorderSize = 0;
+            this.restoreBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.restoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.restoreBtn.Location = new System.Drawing.Point(912, 3);
+            this.restoreBtn.Name = "restoreBtn";
+            this.restoreBtn.Size = new System.Drawing.Size(21, 21);
+            this.restoreBtn.TabIndex = 12;
+            this.restoreBtn.UseVisualStyleBackColor = false;
+            this.restoreBtn.Click += new System.EventHandler(this.restoreBtn_Click);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeBtn.BackColor = System.Drawing.Color.Black;
+            this.minimizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.minimizeBtn;
+            this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Location = new System.Drawing.Point(878, 6);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(15, 15);
+            this.minimizeBtn.TabIndex = 11;
+            this.minimizeBtn.UseVisualStyleBackColor = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBtn.BackColor = System.Drawing.Color.Black;
+            this.closeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.closeBtn;
+            this.closeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.closeBtn.FlatAppearance.BorderSize = 0;
+            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Location = new System.Drawing.Point(951, 6);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(15, 15);
+            this.closeBtn.TabIndex = 9;
+            this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // navBtn3
             // 
@@ -293,47 +400,25 @@
             this.panel2.Size = new System.Drawing.Size(208, 761);
             this.panel2.TabIndex = 6;
             // 
-            // usernameLable
+            // navBtn7
             // 
-            this.usernameLable.AutoSize = true;
-            this.usernameLable.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLable.ForeColor = System.Drawing.Color.White;
-            this.usernameLable.Location = new System.Drawing.Point(66, 12);
-            this.usernameLable.Name = "usernameLable";
-            this.usernameLable.Size = new System.Drawing.Size(47, 17);
-            this.usernameLable.TabIndex = 15;
-            this.usernameLable.Text = "Name";
-            // 
-            // roleLable
-            // 
-            this.roleLable.AutoSize = true;
-            this.roleLable.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleLable.ForeColor = System.Drawing.Color.Silver;
-            this.roleLable.Location = new System.Drawing.Point(67, 33);
-            this.roleLable.Name = "roleLable";
-            this.roleLable.Size = new System.Drawing.Size(38, 15);
-            this.roleLable.TabIndex = 16;
-            this.roleLable.Text = "Name";
-            // 
-            // navBtn5
-            // 
-            this.navBtn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.navBtn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.navBtn5.FlatAppearance.BorderSize = 0;
-            this.navBtn5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.navBtn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.navBtn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.navBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.navBtn5.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navBtn5.ForeColor = System.Drawing.Color.White;
-            this.navBtn5.Location = new System.Drawing.Point(14, 369);
-            this.navBtn5.Margin = new System.Windows.Forms.Padding(2);
-            this.navBtn5.Name = "navBtn5";
-            this.navBtn5.Size = new System.Drawing.Size(177, 46);
-            this.navBtn5.TabIndex = 12;
-            this.navBtn5.Text = "Button";
-            this.navBtn5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.navBtn5.UseVisualStyleBackColor = false;
+            this.navBtn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn7.FlatAppearance.BorderSize = 0;
+            this.navBtn7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn7.ForeColor = System.Drawing.Color.White;
+            this.navBtn7.Location = new System.Drawing.Point(14, 469);
+            this.navBtn7.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn7.Name = "navBtn7";
+            this.navBtn7.Size = new System.Drawing.Size(177, 46);
+            this.navBtn7.TabIndex = 14;
+            this.navBtn7.Text = "Button";
+            this.navBtn7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn7.UseVisualStyleBackColor = false;
             // 
             // navBtn6
             // 
@@ -355,99 +440,25 @@
             this.navBtn6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.navBtn6.UseVisualStyleBackColor = false;
             // 
-            // navBtn7
+            // navBtn5
             // 
-            this.navBtn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.navBtn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.navBtn7.FlatAppearance.BorderSize = 0;
-            this.navBtn7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.navBtn7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.navBtn7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.navBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.navBtn7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navBtn7.ForeColor = System.Drawing.Color.White;
-            this.navBtn7.Location = new System.Drawing.Point(14, 469);
-            this.navBtn7.Margin = new System.Windows.Forms.Padding(2);
-            this.navBtn7.Name = "navBtn7";
-            this.navBtn7.Size = new System.Drawing.Size(177, 46);
-            this.navBtn7.TabIndex = 14;
-            this.navBtn7.Text = "Button";
-            this.navBtn7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.navBtn7.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RestaurantManagementSystem.App.Properties.Resources.employee1;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // restoreBtn
-            // 
-            this.restoreBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.restoreBtn.BackColor = System.Drawing.Color.Black;
-            this.restoreBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.restoreBtn;
-            this.restoreBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.restoreBtn.FlatAppearance.BorderSize = 0;
-            this.restoreBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.restoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restoreBtn.Location = new System.Drawing.Point(872, 3);
-            this.restoreBtn.Name = "restoreBtn";
-            this.restoreBtn.Size = new System.Drawing.Size(21, 21);
-            this.restoreBtn.TabIndex = 12;
-            this.restoreBtn.UseVisualStyleBackColor = false;
-            this.restoreBtn.Click += new System.EventHandler(this.restoreBtn_Click);
-            // 
-            // minimizeBtn
-            // 
-            this.minimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimizeBtn.BackColor = System.Drawing.Color.Black;
-            this.minimizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.minimizeBtn;
-            this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.minimizeBtn.FlatAppearance.BorderSize = 0;
-            this.minimizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minimizeBtn.Location = new System.Drawing.Point(915, 6);
-            this.minimizeBtn.Name = "minimizeBtn";
-            this.minimizeBtn.Size = new System.Drawing.Size(15, 15);
-            this.minimizeBtn.TabIndex = 11;
-            this.minimizeBtn.UseVisualStyleBackColor = false;
-            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
-            // 
-            // maximizeBtn
-            // 
-            this.maximizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maximizeBtn.BackColor = System.Drawing.Color.Black;
-            this.maximizeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.maximizeBtn;
-            this.maximizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.maximizeBtn.FlatAppearance.BorderSize = 0;
-            this.maximizeBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.maximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maximizeBtn.Location = new System.Drawing.Point(872, 3);
-            this.maximizeBtn.Name = "maximizeBtn";
-            this.maximizeBtn.Size = new System.Drawing.Size(21, 21);
-            this.maximizeBtn.TabIndex = 10;
-            this.maximizeBtn.UseVisualStyleBackColor = false;
-            this.maximizeBtn.Click += new System.EventHandler(this.maximizeBtn_Click);
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeBtn.BackColor = System.Drawing.Color.Black;
-            this.closeBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.closeBtn;
-            this.closeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.closeBtn.FlatAppearance.BorderSize = 0;
-            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeBtn.Location = new System.Drawing.Point(951, 6);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(15, 15);
-            this.closeBtn.TabIndex = 9;
-            this.closeBtn.UseVisualStyleBackColor = false;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            this.navBtn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.navBtn5.FlatAppearance.BorderSize = 0;
+            this.navBtn5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.navBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.navBtn5.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBtn5.ForeColor = System.Drawing.Color.White;
+            this.navBtn5.Location = new System.Drawing.Point(14, 369);
+            this.navBtn5.Margin = new System.Windows.Forms.Padding(2);
+            this.navBtn5.Name = "navBtn5";
+            this.navBtn5.Size = new System.Drawing.Size(177, 46);
+            this.navBtn5.TabIndex = 12;
+            this.navBtn5.Text = "Button";
+            this.navBtn5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.navBtn5.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -459,17 +470,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(98, 0);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // WelcomeForm
             // 
@@ -487,14 +487,14 @@
             this.Load += new System.EventHandler(this.WelcomeForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

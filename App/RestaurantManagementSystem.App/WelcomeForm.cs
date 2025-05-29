@@ -63,7 +63,7 @@ namespace RestaurantManagementSystem.App
                 //btn.Click -= NavButton_Click; // Remove old event handlers
             }
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""E:\OneDrive - NSBM\DevProjects\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\netys\OneDrive - NSBM\Y1 S3\C# project\Restaurant-Management-System\App\RestaurantManagementSystem.App\Database1.mdf"";Integrated Security=True";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
