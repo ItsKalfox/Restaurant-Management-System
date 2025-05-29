@@ -100,9 +100,10 @@ namespace RestaurantManagementSystem.App
         private void SetupUI()
         {
             navBtn1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn1.Height, 20, 20));
-            navBtn2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn2.Height, 20, 20));
-            navBtn3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn3.Height, 20, 20));
-            navBtn4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn1.Width, navBtn4.Height, 20, 20));
+            navBtn2.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn2.Width, navBtn2.Height, 20, 20));
+            navBtn3.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn3.Width, navBtn3.Height, 20, 20));
+            navBtn4.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, navBtn4.Width, navBtn4.Height, 20, 20));
+            lgBtn.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, lgBtn.Width, lgBtn.Height, 20, 20));
 
             Panel line = new Panel();
             line.Height = 2;
@@ -207,6 +208,21 @@ namespace RestaurantManagementSystem.App
                 ReleaseCapture();
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
         }
     }
 }

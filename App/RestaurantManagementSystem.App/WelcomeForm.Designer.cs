@@ -40,6 +40,7 @@
             this.usernameLable = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.navBtn4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.maximizeBtn = new System.Windows.Forms.Button();
@@ -50,6 +51,7 @@
             this.navBtn2 = new System.Windows.Forms.Button();
             this.navBtn1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lgBtn = new System.Windows.Forms.Button();
             this.navBtn7 = new System.Windows.Forms.Button();
             this.navBtn6 = new System.Windows.Forms.Button();
             this.navBtn5 = new System.Windows.Forms.Button();
@@ -181,9 +183,9 @@
             this.roleLable.ForeColor = System.Drawing.Color.Silver;
             this.roleLable.Location = new System.Drawing.Point(67, 33);
             this.roleLable.Name = "roleLable";
-            this.roleLable.Size = new System.Drawing.Size(38, 15);
+            this.roleLable.Size = new System.Drawing.Size(31, 15);
             this.roleLable.TabIndex = 16;
-            this.roleLable.Text = "Name";
+            this.roleLable.Text = "Role";
             // 
             // usernameLable
             // 
@@ -209,12 +211,29 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(208, 27);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(976, 73);
             this.panel3.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.notiIcon;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(693, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(21, 21);
+            this.button1.TabIndex = 11;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // navBtn4
             // 
@@ -383,6 +402,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel2.Controls.Add(this.lgBtn);
             this.panel2.Controls.Add(this.navBtn7);
             this.panel2.Controls.Add(this.navBtn6);
             this.panel2.Controls.Add(this.navBtn5);
@@ -399,6 +419,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 761);
             this.panel2.TabIndex = 6;
+            // 
+            // lgBtn
+            // 
+            this.lgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lgBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.logout_button;
+            this.lgBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lgBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.lgBtn.FlatAppearance.BorderSize = 0;
+            this.lgBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lgBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lgBtn.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lgBtn.ForeColor = System.Drawing.Color.White;
+            this.lgBtn.Location = new System.Drawing.Point(37, 711);
+            this.lgBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.lgBtn.Name = "lgBtn";
+            this.lgBtn.Size = new System.Drawing.Size(119, 31);
+            this.lgBtn.TabIndex = 15;
+            this.lgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lgBtn.UseVisualStyleBackColor = false;
+            this.lgBtn.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // navBtn7
             // 
@@ -527,5 +569,7 @@
         private System.Windows.Forms.Button minimizeBtn;
         private System.Windows.Forms.Button maximizeBtn;
         private System.Windows.Forms.Button restoreBtn;
+        private System.Windows.Forms.Button lgBtn;
+        private System.Windows.Forms.Button button1;
     }
 }

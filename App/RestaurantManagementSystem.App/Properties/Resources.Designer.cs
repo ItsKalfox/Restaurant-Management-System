@@ -113,6 +113,26 @@ namespace RestaurantManagementSystem.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_minimize_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minimize-50", resourceCulture);
@@ -126,6 +146,36 @@ namespace RestaurantManagementSystem.App.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_button {
+            get {
+                object obj = ResourceManager.GetObject("logout-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logout_logo {
+            get {
+                object obj = ResourceManager.GetObject("logout-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoutLogo {
+            get {
+                object obj = ResourceManager.GetObject("logoutLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +216,16 @@ namespace RestaurantManagementSystem.App.Properties {
         internal static System.Drawing.Bitmap Notification1 {
             get {
                 object obj = ResourceManager.GetObject("Notification1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notiIcon {
+            get {
+                object obj = ResourceManager.GetObject("notiIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +286,26 @@ namespace RestaurantManagementSystem.App.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_05_29_at_10_59_01_36859ffd {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-05-29 at 10.59.01_36859ffd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_05_29_at_13_16_52_2d015e78 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-05-29 at 13.16.52_2d015e78", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_05_29_at_13_17_09_15840a61 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-05-29 at 13.17.09_15840a61", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

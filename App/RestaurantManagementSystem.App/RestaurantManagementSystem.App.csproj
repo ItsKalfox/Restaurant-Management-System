@@ -227,6 +227,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\notiIcon.png" />
+    <None Include="Resources\logout-button.png" />
+    <None Include="Resources\logoutLogo.png" />
+    <None Include="Resources\logout-logo.png" />
+    <None Include="Resources\icons8-logout-481.png" />
+    <None Include="Resources\icons8-logout-48.png" />
+    <None Include="Resources\WhatsApp Image 2025-05-29 at 13.16.52_2d015e78.jpg" />
+    <None Include="Resources\WhatsApp Image 2025-05-29 at 13.17.09_15840a61.jpg" />
     <None Include="Resources\Restpic.png" />
     <None Include="Resources\restoreBtn.png" />
     <None Include="Resources\minimizeBtn.png" />
