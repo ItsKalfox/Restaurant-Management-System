@@ -17,6 +17,7 @@ namespace RestaurantManagementSystem.App
         private Form activeDynamicForm = null;
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HTCAPTION = 0x2;
+        private readonly int employeeId;
 
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
@@ -41,11 +42,12 @@ namespace RestaurantManagementSystem.App
             SetupUI();
         }
 
-        public WelcomeForm(string fullName, string roleName, int roleId) : this()
+        public WelcomeForm(string fullName, string roleName, int roleId, int employeeId) : this()
         {
             usernameLable.Text = $"{fullName}";
             roleLable.Text = $"{roleName}";
             LoadButtonsForRole(roleId);
+            this.employeeId = employeeId;
         }
 
         private void SetupUI()
@@ -114,7 +116,16 @@ namespace RestaurantManagementSystem.App
                                             activeDynamicForm.Close();
                                         }
 
-                                        Form formInstance = (Form)Activator.CreateInstance(formType);
+                                        Form formInstance;
+                                        if (formNameToShow == "TableViewForm")
+                                        {
+                                            formInstance = new TableViewForm(employeeId);
+                                        }
+                                        else
+                                        {
+                                            formInstance = (Form)Activator.CreateInstance(formType);
+                                        }
+
                                         activeDynamicForm = formInstance;
 
                                         formInstance.StartPosition = FormStartPosition.Manual;
@@ -142,6 +153,7 @@ namespace RestaurantManagementSystem.App
                                     MessageBox.Show($"Error loading form '{formNameToShow}': {ex.Message}", "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 }
                             };
+
 
 
                         }

@@ -34,7 +34,6 @@ namespace RestaurantManagementSystem.App
             {
                 _imageKey = value;
 
-                // Load image from Resources dynamically
                 try
                 {
                     object img = Properties.Resources.ResourceManager.GetObject(value);

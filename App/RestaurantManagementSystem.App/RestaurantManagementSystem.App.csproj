@@ -141,6 +141,12 @@
     <Compile Include="TableViewForm.Designer.cs">
       <DependentUpon>TableViewForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestStatusChanger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestStatusChanger.Designer.cs">
+      <DependentUpon>TestStatusChanger.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TableViewForm.resx">
+      <DependentUpon>TableViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestStatusChanger.resx">
+      <DependentUpon>TestStatusChanger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>

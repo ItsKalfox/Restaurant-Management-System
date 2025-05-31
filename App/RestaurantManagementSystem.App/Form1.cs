@@ -128,6 +128,7 @@ namespace RestaurantManagementSystem.App
                                         l.PasswordHash, 
                                         e.FirstName, 
                                         e.LastName, 
+                                        e.EmployeeID,
                                         r.RoleName, 
                                         r.RoleID
                                     FROM logins l
@@ -150,8 +151,9 @@ namespace RestaurantManagementSystem.App
                                     string fullName = $"{reader["FirstName"]} {reader["LastName"]}";
                                     string roleName = reader["RoleName"].ToString();
                                     int roleId = Convert.ToInt32(reader["RoleID"]);
+                                    int employeeId = Convert.ToInt32(reader["EmployeeID"]);
 
-                                    WelcomeForm welcomeForm = new WelcomeForm(fullName, roleName, roleId);
+                                    WelcomeForm welcomeForm = new WelcomeForm(fullName, roleName, roleId, employeeId);
                                     welcomeForm.Show();
                                     this.Hide();
                                 }
