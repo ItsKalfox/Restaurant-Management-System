@@ -121,6 +121,10 @@ namespace RestaurantManagementSystem.App
                                         {
                                             formInstance = new TableViewForm(employeeId);
                                         }
+                                        else if (formNameToShow == "MenuForm")
+                                        {
+                                            formInstance = (Form)Activator.CreateInstance(formType, employeeId);
+                                        }
                                         else
                                         {
                                             formInstance = (Form)Activator.CreateInstance(formType);

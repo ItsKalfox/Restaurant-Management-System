@@ -269,6 +269,10 @@
     <Content Include="Images\Spicy-Mix-Rice.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\remove_icon_w.png" />
+    <None Include="Resources\add_icon_w.png" />
+    <None Include="Resources\add_icon.png" />
+    <None Include="Resources\remove_icon.png" />
     <None Include="Resources\2b50.png" />
     <None Include="Resources\search_logo.png" />
     <None Include="Resources\Spicy-Mix-Rice.png" />

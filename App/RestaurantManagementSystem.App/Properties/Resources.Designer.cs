@@ -73,6 +73,26 @@ namespace RestaurantManagementSystem.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_icon {
+            get {
+                object obj = ResourceManager.GetObject("add_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_icon_w {
+            get {
+                object obj = ResourceManager.GetObject("add_icon_w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChopSuey_Rice {
             get {
                 object obj = ResourceManager.GetObject("ChopSuey_Rice", resourceCulture);
@@ -276,6 +296,26 @@ namespace RestaurantManagementSystem.App.Properties {
         internal static System.Drawing.Bitmap notiIcon {
             get {
                 object obj = ResourceManager.GetObject("notiIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_icon {
+            get {
+                object obj = ResourceManager.GetObject("remove_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_icon_w {
+            get {
+                object obj = ResourceManager.GetObject("remove_icon_w", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
