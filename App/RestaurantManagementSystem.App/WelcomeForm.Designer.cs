@@ -471,23 +471,23 @@
             // 
             // lgBtn
             // 
-            this.lgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.lgBtn.BackgroundImage = global::RestaurantManagementSystem.App.Properties.Resources.logout_button;
+            this.lgBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lgBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.lgBtn.Cursor = System.Windows.Forms.Cursors.Default;
             this.lgBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.lgBtn.FlatAppearance.BorderSize = 0;
             this.lgBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lgBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lgBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.lgBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lgBtn.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lgBtn.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lgBtn.ForeColor = System.Drawing.Color.White;
-            this.lgBtn.Location = new System.Drawing.Point(37, 711);
+            this.lgBtn.Location = new System.Drawing.Point(24, 747);
             this.lgBtn.Margin = new System.Windows.Forms.Padding(2);
             this.lgBtn.Name = "lgBtn";
-            this.lgBtn.Size = new System.Drawing.Size(119, 31);
+            this.lgBtn.Size = new System.Drawing.Size(149, 31);
             this.lgBtn.TabIndex = 15;
-            this.lgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lgBtn.Text = "Logout";
             this.lgBtn.UseVisualStyleBackColor = false;
             this.lgBtn.Click += new System.EventHandler(this.button1_Click_2);
             // 

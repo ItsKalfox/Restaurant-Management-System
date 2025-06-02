@@ -46,7 +46,7 @@ namespace RestaurantManagementSystem.App
         {
             LoadMenuItems();
             LoadTables();
-            WireQuantityButtons(); // ADD THIS
+            WireQuantityButtons();
             UpdateConfirmButtonState();
         }
 

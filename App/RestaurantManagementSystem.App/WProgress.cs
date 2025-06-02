@@ -41,9 +41,8 @@ namespace RestaurantManagementSystem.App
             foreach (var btn in serveButtons)
                 btn.Click += ServeButton_Click;
 
-            // Auto-refresh timer setup
             refreshTimer = new Timer();
-            refreshTimer.Interval = 1000; // 1 second
+            refreshTimer.Interval = 1000;
             refreshTimer.Tick += RefreshTimer_Tick;
             refreshTimer.Start();
 
@@ -133,7 +132,6 @@ namespace RestaurantManagementSystem.App
                     quantityLabels[index].Text = $"{quantity}";
                     statusLabels[index].Text = status;
 
-                    // Set font color based on status
                     if (status == "Pending")
                     {
                         statusLabels[index].ForeColor = Color.DarkOrange;
@@ -202,7 +200,7 @@ namespace RestaurantManagementSystem.App
 
         private void WProgress_Load(object sender, EventArgs e)
         {
-            // No additional load logic needed currently
+
         }
 
         private void label2_Click(object sender, EventArgs e)

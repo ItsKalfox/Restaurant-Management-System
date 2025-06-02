@@ -274,7 +274,18 @@ namespace RestaurantManagementSystem.App
 
         private void button1_Click_2(object sender, EventArgs e)
         {
+            System.Threading.Thread newThread = new System.Threading.Thread(() =>
+            {
+                Application.Run(new Form1());
+            });
 
+            newThread.SetApartmentState(System.Threading.ApartmentState.STA);
+            newThread.Start();
+
+            foreach (Form form in Application.OpenForms.Cast<Form>().ToList())
+            {
+                form.Invoke((MethodInvoker)(() => form.Close()));
+            }
         }
 
         private void button1_Click_3(object sender, EventArgs e)
