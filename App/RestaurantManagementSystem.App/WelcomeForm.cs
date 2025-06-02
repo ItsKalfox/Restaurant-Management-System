@@ -125,6 +125,10 @@ namespace RestaurantManagementSystem.App
                                         {
                                             formInstance = (Form)Activator.CreateInstance(formType, employeeId);
                                         }
+                                        else if (formNameToShow == "WProgress")
+                                        {
+                                            formInstance = (Form)Activator.CreateInstance(formType, employeeId);
+                                        }
                                         else
                                         {
                                             formInstance = (Form)Activator.CreateInstance(formType);
