@@ -129,6 +129,12 @@
     <Compile Include="Receipt.Designer.cs">
       <DependentUpon>Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="RTableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RTableView.Designer.cs">
+      <DependentUpon>RTableView.cs</DependentUpon>
+    </Compile>
     <Compile Include="SalaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RTableView.resx">
+      <DependentUpon>RTableView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TableViewForm.resx">
       <DependentUpon>TableViewForm.cs</DependentUpon>
     </EmbeddedResource>
