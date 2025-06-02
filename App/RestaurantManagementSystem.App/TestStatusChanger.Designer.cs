@@ -65,6 +65,7 @@
             this.resultLabel.Size = new System.Drawing.Size(292, 19);
             this.resultLabel.TabIndex = 2;
             this.resultLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.resultLabel.Click += new System.EventHandler(this.resultLabel_Click);
             // 
             // updateStatusButton
             // 

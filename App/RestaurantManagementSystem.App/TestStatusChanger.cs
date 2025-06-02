@@ -137,5 +137,10 @@ namespace RestaurantManagementSystem.App
         private void TableStatusTestForm_Load(object sender, EventArgs e)
         {
         }
+
+        private void resultLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
