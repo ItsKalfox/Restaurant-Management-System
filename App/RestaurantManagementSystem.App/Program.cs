@@ -19,7 +19,7 @@ namespace RestaurantManagementSystem.App
 
             string fullName = "Alex Waiter";
             string roleName = "Waiter";
-            int roleId = 1; // Replace with actual RoleID for waiter from your DB
+            int roleId = 3; // Replace with actual RoleID for waiter from your DB
             int employeeId = 1; // Replace with actual EmployeeID for Alex Waiter from your DB
             Application.Run(new WelcomeForm(fullName, roleName, roleId, employeeId));
             //Application.Run(new Form1());
